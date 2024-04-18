@@ -139,13 +139,35 @@ input::placeholder {
     font-weight: 300;
     text-decoration: none;
 }
-.dropdown-produkts {
+
+.dropbtn {
+    width: 150px;
+    height: 50px;
+}
+.drop-content {
     display: none;
     position: absolute;
-    top: 35px;
-}
-.produkts:hover  dropdown-produkts{
+    top: 75px;
+    width: 300px;
+    margin-left: 150px;
     background-color: #2c71b8;
+
+}
+.produkts-menu:hover .drop-content {
     display: block;
-    top: 90px;
+
+}
+.drop-content a {
+    color: white;
+    background-color: #2c71b8;
+    justify-content: left;
+    padding: 30px;
+}
+.drop-content a:hover {
+    background-color: white;
+    color: #2c71b8;
+}
+.produkts-menu:hover .dropbtn {
+    background-color: #2c71b8;
+    color: white;
 }
