@@ -116,7 +116,7 @@ input::placeholder {
     font-size: 21px;
     padding-left: 20px;
 }
-.down-arrow-produkts {
+.down-arrow-products {
     background-image: url(images/arrow_down_blue.png);
     position: fixed;
     width: 25px;
@@ -125,7 +125,8 @@ input::placeholder {
     margin-right: -125px;
     background-repeat: no-repeat;
 }
-.produkts-menu {
+.products-menu {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,12 +144,12 @@ input::placeholder {
 .drop-content {
     display: none;
     position: absolute;
-    top: 75px;
+    top: 100%;
     width: 300px;
-    margin-left: 150px;
+    left: 0;
     background-color: #2c71b8;
 }
-.produkts-menu:hover .drop-content {
+.products-menu:hover .drop-content {
     display: block;
 }
 .drop-content a {
@@ -161,11 +162,11 @@ input::placeholder {
     background-color: white;
     color: #2c71b8;
 }
-.produkts-menu:hover .dropbtn {
+.products-menu:hover .dropbtn {
     background-color: #2c71b8;
     color: white;
 }
-.produkts-menu:hover .down-arrow-produkts {
+.products-menu:hover .down-arrow-products {
     background-image: url(images/arrow_down_white.png);
     position: fixed;
     width: 25px;
